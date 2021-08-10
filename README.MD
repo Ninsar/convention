@@ -1,7 +1,9 @@
-# Ninsar C# codestyle
+# Ninsar conventions
 
-This repo contains (WIP) all C# codestyle guides & rules which are adopted in our organisation.
+This repo contains all codestyles, conventions, guidelines, etc., which are adopted in our organisation.
 
 ## Table of contents
-
-- `ninsar-codestylle.DotSettings` – ReSharper settings that are applicable both to IDEs (Rider and ReSharper for VS) and CIs ([resharper-ci](https://github.com/florius0/resharper-ci) and [resharper-unity-ci](https://github.com/florius0/resharper-unity-ci))
+- [This page](README.MD) 
+- `C#`
+  - [Convention](csharp/csharp-convention.md)
+  - [Resharper settings](csharp/ninsar-codestyle.DotSettings)
