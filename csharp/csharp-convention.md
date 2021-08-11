@@ -64,7 +64,7 @@ protected XmlHelper xmlHelper;
 ```csharp
 // Correct
 public DateTime ClientAppointment;
-protected TimeSpan TimeLeft;
+protected TimeSpan timeLeft;
 private DateTime _registrationDate;
 
 // Avoid
