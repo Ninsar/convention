@@ -2,27 +2,37 @@
 
 ## Naming
 
-| Object Name             | Notation            | Plural | Part of speech | Abbreviation | Char Mask  |
-|:------------------------|:--------------------|:-------|:---------------|:-------------|:-----------|
-| Namespace name          | PascalCase          | Yes    | N              | No           | [A-z][0-9] |
-| Class name              | PascalCase          | No     | N              | No           | [A-z][0-9] |
-| Abstract class name     | AbstractPascalCase  | No     | N              | No           | [A-z][0-9] |
-| Constructor name        | PascalCase          | No     | N              | No           | [A-z][0-9] |
-| Interface name          | IPascalCase         | No     | N or Adj       | No           | [A-z][0-9] |
-| Method name             | PascalCase          | Yes    | V or V + Any   | No           | [A-z][0-9] |
-| Method arguments        | camelCase           | Yes    | N              | Yes          | [A-z][0-9] |
-| Local variables         | camelCase           | Yes    | N              | Yes          | [A-z][0-9] |
-| Constants name          | PascalCase          | No     | N              | No           | [A-z][0-9] |
-| Public    field name    | PascalCase          | Yes    | N              | Yes          | [A-z][0-9] |
-| Protected field name    | camelCase           | Yes    | N              | Yes          | [A-z][0-9] |
-| Private   field name    | _camelCase          | Yes    | N              | Yes          | [A-z][0-9] |
-| Public    property name | PascalCase          | Yes    | N              | Yes          | [A-z][0-9] |
-| Protected property name | camelCase           | Yes    | N              | Yes          | [A-z][0-9] |
-| Private   property name | _camelCase          | Yes    | N              | Yes          | [A-z][0-9] |
-| Delegate name           | PascalCase          | No     | N              | Yes          | [A-z]      |
-| Enum type name          | PascalCase          | Yes    | N              | No           | [A-z]      |
+| Object Name             | Notation           | Plural | Part of speech | Abbreviation | Char Mask  |
+| :---------------------- | :----------------- | :----- | :------------- | :----------- | :--------- |
+| Namespace name          | PascalCase         | Yes    | N              | No           | [A-z][0-9] |
+| Class name              | PascalCase         | No     | N              | No           | [A-z][0-9] |
+| Abstract class name     | AbstractPascalCase | No     | N              | No           | [A-z][0-9] |
+| Constructor name        | PascalCase         | No     | N              | No           | [A-z][0-9] |
+| Interface name          | IPascalCase        | No     | N or Adj       | No           | [A-z][0-9] |
+| Method name             | PascalCase         | Yes    | V or V + Any   | No           | [A-z][0-9] |
+| Method arguments        | camelCase          | Yes    | N              | Yes          | [A-z][0-9] |
+| Local variables         | camelCase          | Yes    | N              | Yes          | [A-z][0-9] |
+| Constants name          | PascalCase         | No     | N              | No           | [A-z][0-9] |
+| Public    field name    | PascalCase         | Yes    | N              | Yes          | [A-z][0-9] |
+| Protected field name    | PascalCase         | Yes    | N              | Yes          | [A-z][0-9] |
+| Private   field name    | _camelCase         | Yes    | N              | Yes          | [A-z][0-9] |
+| Public    property name | PascalCase         | Yes    | N              | Yes          | [A-z][0-9] |
+| Protected property name | PascalCase         | Yes    | N              | Yes          | [A-z][0-9] |
+| Private   property name | _camelCase         | Yes    | N              | Yes          | [A-z][0-9] |
+| Delegate name           | PascalCase         | No     | N              | Yes          | [A-z]      |
+| Enum type name          | PascalCase         | Yes    | N              | No           | [A-z]      |
 
-#### 1. Use meaningful names everywhere
+#### 1. Only English identifiers are allowed. Comments may be written in language of choice
+
+```csharp
+// Correct
+public int Counter;
+
+// Avoid
+public int Счетчик;
+```
+
+#### 2. Use meaningful names everywhere
 
 ```csharp
 // Correct
@@ -32,9 +42,22 @@ public void ClearPage() { }
 public void DoThing() { }
 ```
 
-#### 2. Do not use caps
+#### 3. Do not transliteration. Exception: proper names
 
-``` csharp
+```csharp
+// Correct
+public int ItemCounter;
+
+// Exception
+public Onegin Eugeni;
+
+// Avoid
+public int ShetchickPredmetov;
+```
+
+#### 4. Do not use caps
+
+```csharp
 // Correct
 public int Count;
 
@@ -42,29 +65,29 @@ public int Count;
 public int COUNT;
 ```
 
-#### 3. Avoid using Abbreviations. Exceptions: abbreviations commonly used as names, such as Id, Xml, Ftp, Uri, Ar, Vr etc
+#### 5. Avoid using Abbreviations. Exceptions: abbreviations commonly used as names, such as Id, Xml, Ftp, Uri, Ar, Vr etc
 
 ```csharp
 // Correct
-UserGroup userGroup;
-Assignment employeeAssignment;
+public UserGroup UserGroup;
+public Assignment EmployeeAssignment;
 
 // Avoid
-UserGroup usrGrp;
-Assignment empAssignment;
+public UserGroup UsrGrp;
+public Assignment EmpAssignment;
 
 // Exeptions
 public class ArContoller { }
 public int UserId;
-protected XmlHelper xmlHelper;
+protected XmlHelper XmlHelper;
 ```
 
-#### 4. Do not use Underscores in identifiers other than prefixes of private fields and properties
+#### 6. Do not use Underscores in identifiers other than prefixes of private fields and properties
 
 ```csharp
 // Correct
 public DateTime ClientAppointment;
-protected TimeSpan timeLeft;
+protected TimeSpan TimeLeft;
 private DateTime _registrationDate;
 
 // Avoid
@@ -72,7 +95,7 @@ public DateTime client_Appointment;
 public TimeSpan time_Left; 
 ```
 
-#### 5. Do prefix abstract classes nams with `Abstract`
+#### 7. Do prefix abstract classes nams with `Abstract`
 
 ```csharp
 public abstract class AbstractShape { }
@@ -80,7 +103,7 @@ public abstract class AbstractShapeCollection { }
 public abstract class AbstractGroup { }
 ```
 
-#### 6. Do prefix interfaces names with the letter `I`
+#### 8. Do prefix interfaces names with the letter `I`
 
 ```csharp
 public interface IShape { }
@@ -88,7 +111,7 @@ public interface IShapeCollection { }
 public interface IGroupable { }
 ```
 
-#### 7. Do use suffix EventArgs at creation of the new classes comprising the information on event
+#### 9. Do use suffix EventArgs at creation of the new classes comprising the information on event
 
 ```csharp
 // Correct
@@ -98,13 +121,13 @@ public class BarcodeReadEventArgs : System.EventArgs { }
 public class BarcodeReadArgs : System.EventArgs { }
 ```
 
-#### 8. Do name event handlers (delegates used as types of events) with the "EventHandler" suffix, as shown in the following example
+#### 10. Do name event handlers (delegates used as types of events) with the "EventHandler" suffix, as shown in the following example
 
 ```csharp
 public delegate void ReadBarcodeEventHandler(object sender, ReadBarcodeEventArgs e);
 ```
 
-#### 9. Do not create names of parameters in methods (or constructors) which differ only by the register
+#### 11. Do not create names of parameters in methods (or constructors) which differ only by the register
 
 ```csharp
 // Correct
@@ -120,7 +143,7 @@ private void MyFunction(string name, string Name)
 }
 ```
 
-#### 10. Do use suffix Exception at creation of the new classes comprising the information on exception
+#### 12. Do use suffix Exception at creation of the new classes comprising the information on exception
 
 ```csharp
 // Correct
@@ -130,7 +153,7 @@ public class BarcodeReadException : System.Exception { }
 public class BarcodeReadError : System.Exception { }
 ```
 
-#### 11. Do use prefix Any, Is, Have or similar keywords for boolean identifier
+#### 13. Do use prefix Any, Is, Have or similar keywords for boolean identifier
 
 ```csharp
 // Correct
@@ -140,7 +163,7 @@ public static bool IsNullOrEmpty(string value) => value == null || value.Length 
 public static bool NullOrEmpty(string value) => value == null || value.Length == 0;
 ```
 
-#### 12. Do use singular names for enums. Exception: bit field enums
+#### 14. Do use singular names for enums. Exception: bit field enums
 
 ```csharp
 // Correct
@@ -166,7 +189,7 @@ public enum Dockings
 }
 ```
 
-#### 13. Do not use "Flag" or "Flags" suffixes in enum type names
+#### 15. Do not use "Flag" or "Flags" suffixes in enum type names
 
 ```csharp
 // Correct
@@ -192,7 +215,7 @@ public enum DockingsFlags
 }
 ```
 
-#### 14. Do not use an "Enum" suffix in enum type names
+#### 16. Do not use an "Enum" suffix in enum type names
 
 ```csharp
 // Correct
@@ -677,7 +700,7 @@ namespace Animals.Dogs
 ## Parts of speech abbreviation reminder
 
 | Abbreviation | Part of speech                       |
-|:-------------|:-------------------------------------|
+| :----------- | :----------------------------------- |
 | N            | Noun                                 |
 | V            | Verb                                 |
 | Adj          | Adjective                            |
