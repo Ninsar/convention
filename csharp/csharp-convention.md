@@ -408,7 +408,7 @@ public partial class Task { }
 
 ```csharp
 // Located in Company/Technology/Feature/Subnamespace/
-namespace Company.Technology.Feature.Subnamespace{ }
+namespace Company.Technology.Feature.Subnamespace { }
 
 // Located in Company/Product/Module/SubModule/
 namespace Company.Product.Module.SubModule { }
