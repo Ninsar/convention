@@ -1,4 +1,4 @@
-# Unity convention
+# Unity Convention
 
 ## Naming
 

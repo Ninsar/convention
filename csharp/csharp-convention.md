@@ -1,4 +1,4 @@
-# C# Conventions
+# C# Convention
 
 ## Naming
 
