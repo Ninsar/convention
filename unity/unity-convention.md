@@ -4,7 +4,7 @@
 
 | Object type      | Notation   | Whitespaces | Plural | Part of speech | Abbreviation | Char Mask  |
 | :--------------- | :--------- | ----------- | :----- | :------------- | :----------- | :--------- |
-| 3D Model         | snake_case | No          | No     | Noun           | No           | [a-z][0-9] |
+| 3D Model         | PascalCase | No          | No     | Noun           | No           | [a-z][0-9] |
 | Material         | snake_case | No          | No     | Noun           | No           | [a-z][0-9] |
 | Shader           | snake_case | No          | No     | Noun           | No           | [a-z][0-9] |
 | Texture          | snake_case | No          | No     | Noun           | No           | [a-z][0-9] |
