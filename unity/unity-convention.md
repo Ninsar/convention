@@ -83,7 +83,28 @@ CardView
   {Image}
 ```
 
-#### 8. ScriptableObject type must be the last in its name. Type name may be separated with whitespace
+#### 8. Do name textures according to this scheme: `"model name"_"texture king"`
+
+```bash
+# Example texture naming for model named "Some.fbx":
+
+# for albedo texture
+some_albedo.png
+
+# for metallic map texture
+some_metallic.png
+
+# for normal map texture
+some_normal.png
+
+# for occlusion map texture
+some_ao.png
+
+# for height (deform) map texture
+some_height.png
+```
+
+#### 9. ScriptableObject type must be the last in its name. Type name may be separated with whitespace
 
 ```csharp
 public SomedData : ScriptableObject {}
@@ -100,7 +121,7 @@ Some.asset
 Character ScriptableObject.assset
 ```
 
-#### 9. GameObject's name may include an annotation in the following format: `[Annotation] GameObjectName`. Both name and annotation should be in PascalCase and may contain whitespaces
+#### 10. GameObject's name may include an annotation in the following format: `[Annotation] GameObjectName`. Both name and annotation should be in PascalCase and may contain whitespaces
 
 ```unity-scene-notation
 # Correct
