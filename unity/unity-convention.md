@@ -83,7 +83,9 @@ CardView
   {Image}
 ```
 
-#### 8. Do name textures according to this scheme: `"model name"_"additional data"_"texture king"`. Additional data may not be specified.
+#### 8. If material belongs to model (is not a general-purpose) do prefix material names with model name in `camel_case`
+
+#### 9. Do name textures according to this scheme: `"model name"_"additional data"_"texture king"`. `"additional data"` may not be specified. `"model name"` must be in `camel_case`
 
 ```bash
 # Example texture naming for model named "Some.fbx":
@@ -104,7 +106,7 @@ some_ao.png
 some_height.png
 ```
 
-#### 9. ScriptableObject type must be the last in its name. Type name may be separated with whitespace
+#### 10. ScriptableObject type must be the last in its name. Type name may be separated with whitespace
 
 ```csharp
 public SomedData : ScriptableObject {}
@@ -121,7 +123,7 @@ Some.asset
 Character ScriptableObject.assset
 ```
 
-#### 10. GameObject's name may include an annotation in the following format: `[Annotation] GameObjectName`. Both name and annotation should be in PascalCase and may contain whitespaces
+#### 11. GameObject's name may include an annotation in the following format: `[Annotation] GameObjectName`. Both name and annotation should be in PascalCase and may contain whitespaces
 
 ```unity-scene-notation
 # Correct
