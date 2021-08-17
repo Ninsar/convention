@@ -83,7 +83,7 @@ CardView
   {Image}
 ```
 
-#### 8. Do name textures according to this scheme: `"model name"_"texture king"`
+#### 8. Do name textures according to this scheme: `"model name"_"additional data"_"texture king"`. Additional data may not be specified.
 
 ```bash
 # Example texture naming for model named "Some.fbx":
