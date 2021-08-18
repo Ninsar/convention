@@ -35,9 +35,32 @@ For examples the following notation will be used:
 
 #### 5. Avoid using Abbreviations. Exceptions: abbreviations commonly used as names, such as Id, Xml, Ftp, Uri, Ar, Vr etc
 
-#### 6. Any asset name (excluding scripts) may be prefixed with an underscore to enforce desiered sorting order
+#### 6. If material belongs to model (is not a general-purpose) do prefix material names with model name in `camel_case`
 
-#### 7. If prefab has a top-level (not only hierarciaclly but logicaly too) component its type name must be the last in prefab's name and separated. Type name may be separated with whitespace. Top-level GameObject name must be the same as prefab's name
+#### 7. Do name textures according to this scheme: `"model name"_"additional data"_"texture king"`. `"additional data"` may not be specified. `"model name"` must be in `camel_case`
+
+```bash
+# Example texture naming for model named "Some.fbx":
+
+# for albedo texture
+some_albedo.png
+
+# for metallic map texture
+some_metallic.png
+
+# for normal map texture
+some_normal.png
+
+# for occlusion map texture
+some_ao.png
+
+# for height (deform) map texture
+some_height.png
+```
+
+#### 8. Any asset name (excluding scripts) may be prefixed with an underscore to enforce desiered sorting order
+
+#### 9. If prefab has a top-level (not only hierarciaclly but logicaly too) component its type name must be the last in prefab's name and separated. Type name may be separated with whitespace. Top-level GameObject name must be the same as prefab's name
 
 ```unity-scene-notation
 # Correct
@@ -81,29 +104,6 @@ CardView
   {Text}
   Icon
   {Image}
-```
-
-#### 8. If material belongs to model (is not a general-purpose) do prefix material names with model name in `camel_case`
-
-#### 9. Do name textures according to this scheme: `"model name"_"additional data"_"texture king"`. `"additional data"` may not be specified. `"model name"` must be in `camel_case`
-
-```bash
-# Example texture naming for model named "Some.fbx":
-
-# for albedo texture
-some_albedo.png
-
-# for metallic map texture
-some_metallic.png
-
-# for normal map texture
-some_normal.png
-
-# for occlusion map texture
-some_ao.png
-
-# for height (deform) map texture
-some_height.png
 ```
 
 #### 10. ScriptableObject type must be the last in its name. Type name may be separated with whitespace
