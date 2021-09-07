@@ -4,6 +4,8 @@ This repo contains all codestyles, conventions, guidelines, etc., which are adop
 
 ## Table of contents
 
+- `git`
+  - [Convention](git/git-convention.md)
 - `C#`
   - [Convention](csharp/csharp-convention.md)
   - [Resharper settings](csharp/ninsar-codestyle.DotSettings)
