@@ -9,6 +9,8 @@ This repo contains all codestyles, conventions, guidelines, etc., which are adop
 - `C#`
   - [Convention](csharp/csharp-convention.md)
   - [Resharper settings](csharp/ninsar-codestyle.DotSettings)
+- `3D Modelling`
+  - [Convention](3d-modelling/3d-modelling-convention.md)
 - `Unity`
   - [Convention](unity/unity-convention.md)
   - [C# Convention](unity/unity-csharp-convention.md)
