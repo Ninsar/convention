@@ -79,7 +79,7 @@ SOME_BRANCH
 Another_example_name
 ```
 
-#### 2. Branch name may be prefixed with if branch will be merge into `main` (via PR or manual merge)
+#### 2. Branch name may be prefixed with if branch will be merged (via PR or manual merge)
 
 | Brach kind                        | Prefix     |
 | --------------------------------- | ---------- |
@@ -108,7 +108,7 @@ old_not_socoolproject
 
 ### Tags
 
-#### 1. Tag name shoudl be a [SemVer](https://semver.org) version prefixed with `v`
+#### 1. Tag name should be a [SemVer](https://semver.org) version prefixed with `v`
 
 ```bash
 # Correct
