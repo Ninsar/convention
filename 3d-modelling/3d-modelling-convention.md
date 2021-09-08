@@ -1,4 +1,4 @@
-# 3D Moodelling Convention
+# 3D Modelling Convention
 
 ## Naming
 
