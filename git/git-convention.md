@@ -62,7 +62,7 @@ Feature description
 
 ### Branches
 
-#### 1. All bracnhes shoud be named in kebab-case (except next rule)
+#### 1. All bracnhes shoud be named in kebab-case
 
 ```bash
 # Correct
