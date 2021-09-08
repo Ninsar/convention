@@ -98,17 +98,29 @@ public TimeSpan time_Left;
 #### 7. Do prefix abstract classes nams with `Abstract`
 
 ```csharp
+// Correct
 public abstract class AbstractShape { }
 public abstract class AbstractShapeCollection { }
 public abstract class AbstractGroup { }
+
+// Avoid
+public abstract class AShape { }
+public abstract class ShapeCollection { }
+public abstract class Group { }
 ```
 
 #### 8. Do prefix interfaces names with the letter `I`
 
 ```csharp
+// Correct
 public interface IShape { }
 public interface IShapeCollection { }
 public interface IGroupable { }
+
+// Avoid
+public interface Shape { }
+public interface ShapeCollection { }
+public interface Groupable { }
 ```
 
 #### 9. Do use suffix EventArgs at creation of the new classes comprising the information on event
@@ -291,7 +303,7 @@ string commaSeparatedNames = String.Join(", ", names);
 int index = Int32.Parse(input);
 ```
 
-#### 2. Do use implicit type var for local variable declarations. Exception: use explicit type declaration if no type identifier is present in current statement
+#### 2. Do use implicit type var for local variable declarations. Exception: use explicit type declaration if no type identifier is present in current expression
 
 ```csharp
 // Correct
