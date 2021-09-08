@@ -22,7 +22,7 @@ For examples the following notation will be used:
 
 - `Plain text` – GameObject with name `Plain text`
 - `{Script}` – A component attached to the above GameObject
-- Hierarcy is displayed with 2-whitespace inddendation
+- Hierarcy is displayed with 2-whitespace intendation
 - Comments start with `#`
 
 #### 1. Only English names are allowed
