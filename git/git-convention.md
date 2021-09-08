@@ -2,15 +2,17 @@
 
 ## Working with `git` and `GitHub`
 
-### General
-
 #### 1. In any commit in `main` project must be working and at least compilable
 
 #### 2. Features and fixes should be integrated in `main` via pull requests as fast as possible
 
-#### 3. Remote repo commit history shold be never changed
+#### 3. New branches should be started from branch they will be merged into. Pull requests should only be open from branch that was started from `main`
 
-#### 4. Commit should be as small as possible (within a reasonable). Its better to have a lot of commits than a giant one
+#### 4. Remote repo commit history shold be never changed
+
+#### 5. Commit should be as small as possible (within a reasonable). Its better to have a lot of commits than a giant one
+
+#### 6. `.gitignore` should only contain project-specific files. All paltform and ide-specific files should be added to global gitignore
 
 ## Naming
 
