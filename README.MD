@@ -5,13 +5,13 @@ This repo contains all codestyles, conventions, guidelines, etc., which are adop
 ## Table of contents
 
 - `git`
-  - [Convention](git/git-convention.md)
+  - Convention ([en](git/git-convention.md ) / [ru](git/git-convention-ru.md))
 - `C#`
-  - [Convention](csharp/csharp-convention.md)
+  - Convention ([en](csharp/csharp-convention.md ) / [ru](csharp/csharp-convention-ru.md))
   - [Resharper settings](csharp/ninsar-codestyle.DotSettings)
 - `3D Modelling`
-  - [Convention](3d-modelling/3d-modelling-convention.md)
+  - Convention ([en](3d-modelling/3d-modelling-convention.md ) / [ru](3d-modelling/3d-modelling-convention-ru.md))
 - `Unity`
-  - [Convention](unity/unity-convention.md)
-  - [C# Convention](unity/unity-csharp-convention.md)
+  - Convention ([en](unity/unity-convention.md ) / [ru](unity/unity-convention-ru.md))
+  - C# Convention ([en](unity/unity-csharp-convention.md ) / [ru](unity/unity-csharp-convention-ru.md))
   - [C# Guide (WIP)](unity/unity-csharp-guide.md)
