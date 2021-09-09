@@ -9,6 +9,7 @@
 ```csharp
 // Located in Assets/Items/
 namespace Items { }
+
 // Located in Assets/Items/Subcomponent/
 namespace Items.Subcomponent { }
 ```
