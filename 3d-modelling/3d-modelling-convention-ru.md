@@ -34,6 +34,12 @@ some_metallic.png
 # для normal map текстуры
 some_normal.png
 
+# для height map текстуры
+some_height.png
+
+# для emission map текстуры
+some_emission.png
+
 # для occlusion map текстуры
 some_ao.png
 

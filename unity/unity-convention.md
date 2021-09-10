@@ -51,6 +51,12 @@ some_metallic.png
 # for normal map texture
 some_normal.png
 
+# for height map texture
+some_height.png
+
+# for emission map texture
+some_emission.png
+
 # for occlusion map texture
 some_ao.png
 
