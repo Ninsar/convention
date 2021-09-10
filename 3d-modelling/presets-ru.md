@@ -4,7 +4,7 @@
 
 ## Substance Painter
 
-- [Preset for Unity URP](presets/Substance%20Painter/Ninsar%20Unity%20URP%20(Metalic%20Glosiness).spexp)
+- [Пресет для экспорта текстур для Unity URP](presets/Substance%20Painter/Ninsar%20Unity%20URP%20(Metalic%20Glosiness).spexp)
 
 ### Устанока
 

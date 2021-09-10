@@ -4,7 +4,7 @@ Directory `3d-modelling/presets` contains presets for 3d modelling software, whi
 
 ## Substance Painter
 
-- [Preset for Unity URP](presets/Substance%20Painter/Ninsar%20Unity%20URP%20(Metalic%20Glosiness).spexp)
+- [Preset for texture export for Unity URP](presets/Substance%20Painter/Ninsar%20Unity%20URP%20(Metalic%20Glosiness).spexp)
 
 ### Installation
 
