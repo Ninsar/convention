@@ -4,7 +4,7 @@
 
 | Object type      | Notation   | Whitespaces | Plural | Part of speech | Abbreviation | Char Mask  |
 | :--------------- | :--------- | ----------- | :----- | :------------- | :----------- | :--------- |
-| 3D Model         | PascalCase | No          | No     | Noun           | No           | [a-z][0-9] |
+| 3D Model         | PascalCase | No          | No     | Noun           | No           | [A-z][0-9] |
 | Material         | snake_case | No          | No     | Noun           | No           | [a-z][0-9] |
 | Texture          | snake_case | No          | No     | Noun           | No           | [a-z][0-9] |
 
@@ -20,7 +20,7 @@
 
 #### 6. Do prefix material names with model name in `camel_case`
 
-#### 7. Do name textures according to this scheme: `"model name"_"additional data"_"texture king"`. `"additional data"` may not be specified. `"model name"` must be in `camel_case`
+#### 7. Do name textures according to this scheme: `"model name"_"additional data"_"texture king"`. `"additional data"` may not be specified. `"model name"` must be in `snake_case`
 
 ```bash
 # Example texture naming for model named "Some.fbx":
