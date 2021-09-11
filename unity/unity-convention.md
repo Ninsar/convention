@@ -252,3 +252,13 @@ Interactable
 Static
   ...
 ```
+
+## Builds
+
+#### 1. Builds should be stored in `Builds/"Platform"/` where `"Platform"` is platforrm for which build is done
+
+NB: Correct spelling is: `iOS`, `macOS`, `Android`, `Windows`, `Linux`, `WebGL`
+
+#### 2. Releases should be stored in `Builds/"Platform"/Release` (exept iOS releases bcs they are built via xcode)
+
+#### 3. For any post-build actions use Build PostProcessing (useful to do builds in CI)
