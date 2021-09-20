@@ -16,3 +16,4 @@ This repo contains all codestyles, conventions, guidelines, etc., which are adop
   - Convention ([en](unity/unity-convention.md ) / [ru](unity/unity-convention-ru.md))
   - C# Convention ([en](unity/unity-csharp-convention.md ) / [ru](unity/unity-csharp-convention-ru.md))
   - [C# Guide (WIP)](unity/unity-csharp-guide.md)
+  - [Git LFS Settings](unity/.gitattributes)
