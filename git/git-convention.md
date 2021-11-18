@@ -79,17 +79,12 @@ SOME_BRANCH
 Another_example_name
 ```
 
-#### 2. Branch name may be prefixed with if branch will be merged (via PR or manual merge)
-
-| Brach kind                        | Prefix     |
-| --------------------------------- | ---------- |
-| Changes feature (adds or removes) | `feature/` |
-| Bugfix                            | `fix`      |
+#### 2. Branch name may be hierarchical. Semicolon `:` should be used as delimeter
 
 ```bash
 # Example
-fix/model-textures
-feature/vidget
+fix:model-textures
+feature:vidget
 ```
 
 ### Repos
