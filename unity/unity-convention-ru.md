@@ -222,7 +222,7 @@ Assets/UI/Menu/...
 Assets/Mobs/Zombies/...
 ```
 
-## Структура сцен
+## Scene structure
 
 #### 1. Предпочитайте вложенную структуру сцены вместо плоской
 
@@ -253,7 +253,7 @@ Static
   ...
 ```
 
-## Билды
+## Builds
 
 #### 1. Билды должны хрниться в `Builds/"Платформа"/`, где `"Платформа"` – платформа для которой сделан билд
 
@@ -262,3 +262,42 @@ NB: Правильное написание: `iOS`, `macOS`, `Android`, `Windows
 #### 2. Релизы должны храниться в `Builds/"Platform"/Release` (за исключением iOS релизов т. к. они делаются через xcode)
 
 #### 3. Для любых действий после билда используйте Build PostProcessing (полезно для билда в CI)
+
+## Git
+
+#### 1. Используйте `git lfs` для всех бинарных файлов
+
+Пример `.gitattributes`:
+
+```bash
+# Image formats:
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+
+# Audio formats:
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.aiff filter=lfs diff=lfs merge=lfs -text
+
+# 3D model formats:
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+
+# Dynamic libraries formats:
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.so filter=lfs diff=lfs merge=lfs -text
+*.dylib filter=lfs diff=lfs merge=lfs -text
+
+# Video formats:
+*.webm filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+```
+
+#### 2. Имя репозитория должно совпадать с `ProductName` в Player settnigs

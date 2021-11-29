@@ -262,3 +262,42 @@ NB: Correct spelling is: `iOS`, `macOS`, `Android`, `Windows`, `Linux`, `WebGL`
 #### 2. Releases should be stored in `Builds/"Platform"/Release` (exept iOS releases bcs they are built via xcode)
 
 #### 3. For any post-build actions use Build PostProcessing (useful to do builds in CI)
+
+## Git
+
+#### 1. Use `git lfs` for each binary file
+
+Exaple of `.gitattributes`:
+
+```bash
+# Image formats:
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+
+# Audio formats:
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.aiff filter=lfs diff=lfs merge=lfs -text
+
+# 3D model formats:
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+
+# Dynamic libraries formats:
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.so filter=lfs diff=lfs merge=lfs -text
+*.dylib filter=lfs diff=lfs merge=lfs -text
+
+# Video formats:
+*.webm filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+```
+
+#### 2. Repository name must be equal to `ProductName` in Player settings
