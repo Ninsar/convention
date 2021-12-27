@@ -79,12 +79,12 @@ SOME_BRANCH
 Another_example_name
 ```
 
-#### 2. Branch name may be hierarchical. Semicolon `:` should be used as delimeter
+#### 2. Branch name may be hierarchical. Slash `/` should be used as delimeter
 
 ```bash
 # Example
-fix:model-textures
-feature:vidget
+fix/model-textures
+feature/vidget
 ```
 
 ### Repos
