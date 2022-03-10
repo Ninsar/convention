@@ -222,6 +222,31 @@ Assets/UI/Menu/...
 Assets/Mobs/Zombies/...
 ```
 
+## Allowed assets file formats
+
+#### 1. Разрешены ассеты только в широкоиспользуемыых форматах обмена.
+
+Reason: Некоторые форматы не предназначены для обмена и могут потребовать плагинов (которые также могут содержать ошибки) и/или стороннего программного обеспечения (которое может быть тяжелым или не поддерживаться на нескольких платформах).
+
+#### 2. Используеть форматы с открытым исходным кодом, если овзможно
+
+#### 3. Список разрешенных форматов (от наиболее рекомендуемых к наименее в каждой категории)
+
+| Category  | Format | Notes                                  |
+| --------- | ------ | -------------------------------------- |
+| 3D Models | obj    | Open-source                            |
+| 3D Models | usd    | Requires official unity plugin         |
+| 3D Models | fbx    | Closed-source, but is widely used      |
+| Images    | png    |                                        |
+| Images    | jpg    |                                        |
+| Images    | tif    |                                        |
+| Images    | exr    |                                        |
+| Images    | wav    |                                        |
+| Images    | ogg    |                                        |
+| Images    | mp3    |                                        |
+| Video     | mp4    |                                        |
+| Video     | webm   | Use vp8 webm if transparency is needed |
+
 ## Scene structure
 
 #### 1. Предпочитайте вложенную структуру сцены вместо плоской
