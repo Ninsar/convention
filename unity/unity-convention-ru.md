@@ -271,33 +271,33 @@ NB: Правильное написание: `iOS`, `macOS`, `Android`, `Windows
 
 ```bash
 # Image formats:
-*.tga filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
-*.tif filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.gif filter=lfs diff=lfs merge=lfs -text
-*.psd filter=lfs diff=lfs merge=lfs -text
-*.exr filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs
+*.png filter=lfs diff=lfs merge=lfs
+*.tif filter=lfs diff=lfs merge=lfs
+*.jpg filter=lfs diff=lfs merge=lfs
+*.gif filter=lfs diff=lfs merge=lfs
+*.psd filter=lfs diff=lfs merge=lfs
+*.exr filter=lfs diff=lfs merge=lfs
 
 # Audio formats:
-*.ogg filter=lfs diff=lfs merge=lfs -text
-*.mp3 filter=lfs diff=lfs merge=lfs -text
-*.wav filter=lfs diff=lfs merge=lfs -text
-*.aiff filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs
+*.mp3 filter=lfs diff=lfs merge=lfs
+*.wav filter=lfs diff=lfs merge=lfs
+*.aiff filter=lfs diff=lfs merge=lfs
 
 # 3D model formats:
-*.fbx filter=lfs diff=lfs merge=lfs -text
-*.obj filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs
+*.obj filter=lfs diff=lfs merge=lfs
 
 # Dynamic libraries formats:
-*.dll filter=lfs diff=lfs merge=lfs -text
-*.so filter=lfs diff=lfs merge=lfs -text
-*.dylib filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs
+*.so filter=lfs diff=lfs merge=lfs
+*.dylib filter=lfs diff=lfs merge=lfs
 
 # Video formats:
-*.webm filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-*.mov filter=lfs diff=lfs merge=lfs -text
+*.webm filter=lfs diff=lfs merge=lfs
+*.mp4 filter=lfs diff=lfs merge=lfs
+*.mov filter=lfs diff=lfs merge=lfs
 ```
 
 #### 2. Имя репозитория должно совпадать с `ProductName` в Player settnigs
