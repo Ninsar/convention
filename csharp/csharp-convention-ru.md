@@ -2,25 +2,25 @@
 
 ## Naming
 
-| Идентификатор           | Нотация            | Plural | Часть речи   | Аббреитура | Char Mask  |
-| :---------------------- | :----------------- | :----- | :----------- | :--------- | :--------- |
-| Namespace name          | PascalCase         | Yes    | N            | No         | [A-z][0-9] |
-| Class name              | PascalCase         | No     | N            | No         | [A-z][0-9] |
-| Abstract class name     | AbstractPascalCase | No     | N            | No         | [A-z][0-9] |
-| Constructor name        | PascalCase         | No     | N            | No         | [A-z][0-9] |
-| Interface name          | IPascalCase        | No     | N or Adj     | No         | [A-z][0-9] |
-| Method name             | PascalCase         | Yes    | V or V + Any | No         | [A-z][0-9] |
-| Method arguments        | camelCase          | Yes    | N            | Yes        | [A-z][0-9] |
-| Local variables         | camelCase          | Yes    | N            | Yes        | [A-z][0-9] |
-| Constants name          | PascalCase         | No     | N            | No         | [A-z][0-9] |
-| Public    field name    | PascalCase         | Yes    | N            | Yes        | [A-z][0-9] |
-| Protected field name    | PascalCase         | Yes    | N            | Yes        | [A-z][0-9] |
-| Private   field name    | _camelCase         | Yes    | N            | Yes        | [A-z][0-9] |
-| Public    property name | PascalCase         | Yes    | N            | Yes        | [A-z][0-9] |
-| Protected property name | PascalCase         | Yes    | N            | Yes        | [A-z][0-9] |
-| Private   property name | _camelCase         | Yes    | N            | Yes        | [A-z][0-9] |
-| Delegate name           | PascalCase         | No     | N            | Yes        | [A-z]      |
-| Enum type name          | PascalCase         | Yes    | N            | No         | [A-z]      |
+| Идентификатор           | Нотация            | Plural | Часть речи   | Аббреитура | Char Mask   |
+| :---------------------- | :----------------- | :----- | :----------- | :--------- | :---------- |
+| Namespace name          | PascalCase         | Yes    | N            | No         | [A-z][0-9]  |
+| Class name              | PascalCase         | No     | N            | No         | [A-z][0-9]  |
+| Abstract class name     | AbstractPascalCase | No     | N            | No         | [A-z][0-9]  |
+| Constructor name        | PascalCase         | No     | N            | No         | [A-z][0-9]  |
+| Interface name          | IPascalCase        | No     | N or Adj     | No         | [A-z][0-9]  |
+| Method name             | PascalCase         | Yes    | V or V + Any | No         | [A-z][0-9]  |
+| Method arguments        | camelCase          | Yes    | N            | Yes        | [A-z][0-9]  |
+| Local variables         | camelCase          | Yes    | N            | Yes        | [A-z][0-9]  |
+| Constants name          | PascalCase         | No     | N            | No         | [A-z][0-9]  |
+| Public    field name     | PascalCase         | Yes    | N            | Yes        | [A-z][0-9]  |
+| Protected field name     | camelCase          | Yes    | N            | Yes        | [A-z][0-9]  |
+| Private   field name     | _camelCase         | Yes    | N            | Yes        | _[A-z][0-9] |
+| Public    property name | PascalCase         | Yes    | N            | Yes        | [A-z][0-9]  |
+| Protected property name | camelCase          | Yes    | N            | Yes        | [A-z][0-9]  |
+| Private   property name | _camelCase         | Yes    | N            | Yes        | _[A-z][0-9] |
+| Delegate name           | PascalCase         | No     | N            | Yes        | [A-z]       |
+| Enum type name          | PascalCase         | Yes    | N            | No         | [A-z]       |
 
 #### 1. Только английские идентификаторы разрешены. Коментарии могут быть написны на любом языке
 
