@@ -71,7 +71,7 @@ Otherwise, the pivot should be located on the bounding box (an imaginary box des
 
 Example:
 ![Pivot example](img/pivot.png)
-Assuming that the model is a blue-violet surface and the bounding box is a yellow cube, the possible position of the pivot is indicated by red dots.
+Assuming that the model is a sphere and the bounding box is a yellow cube, the possible position of the pivot is indicated by red dots.
 
 ## Transform
 
