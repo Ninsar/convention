@@ -64,7 +64,7 @@ some_ao.png
 some_height.png
 ```
 
-#### 8. Имя любого ассета (кроме скриптов) может иметь префикс `_` для обеспечения желемого порядкаа сортировки
+#### 8. Имя любого ассета (кроме скриптов) может иметь префикс `_` для обеспечения желемого порядка сортировки
 
 #### 9. Если в префабе есть верхнеуровневый (не только иерархически, но и логически) компонент его имя должно быть последним в имени префаба и отделено пробелом. Имя верхнеуровнего GameObject'а должно совпадать с именем префаба
 
@@ -144,7 +144,38 @@ iNvEnToRy___item
 
 ## Project structure
 
-#### 1. Используйте "Component-based" струкуру директорий вместо "AssetType-based"
+#### 1. Используйте "Component-based" структуру директорий вместо "AssetType-based"
+
+Unity предлагает организовывать ассеты в проектах по их типу:
+
+```bash
+Assets/Textures/grass.png
+Assets/Textures/dirt.png
+Assets/Scenes/main.unity
+Assets/Meshes/model.fbx
+Assets/Materials/MaterialB.mat
+Assets/Materials/MaterialA.mat
+```
+
+Однако, для больших проектов это неудобно, так как при большом количестве ассетов поиск и навигация начинают занимать большое количество времени.
+
+Вместо этого следует организовывать ассеты по компонентам (компонент – составная самостоятельная часть чего-либо). Все ассеты компонента должны находится в одной директории – директории компонента.
+
+Например, вот так может выглядеть структура проекта шутера:
+
+```bash
+Assets/Player/Player.prefab
+Assets/Player/FirstPersonController.cs
+Assets/Weapons/Weapon.cs
+Assets/Weapons/Ar15/Ar15.cs
+Assets/Weapons/Ar15/ar15.fbx
+Assets/Weapons/Ar15/ar15.png
+Assets/Weapons/Ar15/223_rem.fbx
+Assets/Weapons/Ar15/223_rem.png
+...
+Assets/Maps/
+...
+```
 
 #### 2. Скрипты должны храниться в корне директории соответствующего компонента
 
@@ -224,26 +255,25 @@ Assets/Mobs/Zombies/...
 
 ## Allowed assets file formats
 
-#### 1. Разрешены ассеты только в широкоиспользуемыых форматах обмена.
+#### 1. Разрешены ассеты только в широкоиспользуемых форматах обмена.
 
 Reason: Некоторые форматы не предназначены для обмена и могут потребовать плагинов (которые также могут содержать ошибки) и/или стороннего программного обеспечения (которое может быть тяжелым или не поддерживаться на нескольких платформах).
 
-#### 2. Используеть форматы с открытым исходным кодом, если овзможно
+#### 2. Используеть форматы с открытым исходным кодом, если возможно
 
 #### 3. Список разрешенных форматов (от наиболее рекомендуемых к наименее в каждой категории)
 
 | Category  | Format | Notes                                  |
 | --------- | ------ | -------------------------------------- |
-| 3D Models | obj    | Open-source                            |
-| 3D Models | usd    | Requires official unity plugin         |
 | 3D Models | fbx    | Closed-source, but is widely used      |
+| 3D Models | obj    | Open-source                            |
 | Images    | png    |                                        |
 | Images    | jpg    |                                        |
 | Images    | tif    |                                        |
-| Images    | exr    |                                        |
-| Images    | wav    |                                        |
-| Images    | ogg    |                                        |
-| Images    | mp3    |                                        |
+| Images    | exr    | HDR raster format                      |
+| Audio     | wav    |                                        |
+| Audio     | ogg    |                                        |
+| Audio     | mp3    |                                        |
 | Video     | mp4    |                                        |
 | Video     | webm   | Use vp8 webm if transparency is needed |
 
@@ -271,12 +301,45 @@ Tutorial
 Menu
 Pause
 ===Game===
-Caracter
+Character
 Interactable
   ...
 Static
   ...
 ```
+
+## Prefabs
+
+#### 1. Предпочитайте вложенную структуру префаба вместо плоской
+
+```unity-scene-notation
+# Correct
+UI
+  Tutorial
+  Menu
+  Pause
+Game
+  Character
+  Environment
+    Interactable
+      ...
+    Static
+      ...
+
+# Avoid
+====UI====
+Tutorial
+Menu
+Pause
+===Game===
+Character
+Interactable
+  ...
+Static
+  ...
+```
+
+#### 2. Не разрешается распаковывать префабы без необходимости
 
 ## Builds
 

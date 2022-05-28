@@ -146,6 +146,37 @@ iNvEnToRy___item
 
 #### 1. Do use "Component-based" directory structure instead of "AssetType-based" directory structure
 
+Unity proposes AssetType-based project structure:
+
+```bash
+Assets/Textures/grass.png
+Assets/Textures/dirt.png
+Assets/Scenes/main.unity
+Assets/Meshes/model.fbx
+Assets/Materials/MaterialB.mat
+Assets/Materials/MaterialA.mat
+```
+
+However, larger the project becomes more unwieldy AssetType-based structure gets.
+
+Instead, organise assets by components (component being a self-contained part of something). Every asset of a component must be stored in one directory.
+
+E. g. shooter game project structure:
+
+```bash
+Assets/Player/Player.prefab
+Assets/Player/FirstPersonController.cs
+Assets/Weapons/Weapon.cs
+Assets/Weapons/Ar15/Ar15.cs
+Assets/Weapons/Ar15/ar15.fbx
+Assets/Weapons/Ar15/ar15.png
+Assets/Weapons/Ar15/223_rem.fbx
+Assets/Weapons/Ar15/223_rem.png
+...
+Assets/Maps/
+...
+```
+
 #### 2. Scripts should be placed directly in root of respective component directory
 
 ```bash
@@ -224,7 +255,7 @@ Assets/Mobs/Zombies/...
 
 ## Allowed assets file formats
 
-#### 1. Only assets in common exchange formats are allowed.
+#### 1. Only assets in common exchange formats are allowed
 
 Reason: Some formats are not designed for purpose of exchanging and may require plugins (which as well may be buggy) and/or third party software (which may be heavy or unsupported across multiple platforms).
 
@@ -234,20 +265,19 @@ Reason: Some formats are not designed for purpose of exchanging and may require 
 
 | Category  | Format | Notes                                  |
 | --------- | ------ | -------------------------------------- |
-| 3D Models | obj    | Open-source                            |
-| 3D Models | usd    | Requires official unity plugin         |
 | 3D Models | fbx    | Closed-source, but is widely used      |
+| 3D Models | obj    | Open-source                            |
 | Images    | png    |                                        |
 | Images    | jpg    |                                        |
 | Images    | tif    |                                        |
-| Images    | exr    |                                        |
-| Images    | wav    |                                        |
-| Images    | ogg    |                                        |
-| Images    | mp3    |                                        |
+| Images    | exr    | HDR raster format                      |
+| Audio     | wav    |                                        |
+| Audio     | ogg    |                                        |
+| Audio     | mp3    |                                        |
 | Video     | mp4    |                                        |
 | Video     | webm   | Use vp8 webm if transparency is needed |
 
-## Scene sctructure
+## Scene structure
 
 #### 1. Prefer nested scene structure over flat one
 
@@ -271,12 +301,45 @@ Tutorial
 Menu
 Pause
 ===Game===
-Caracter
+Character
 Interactable
   ...
 Static
   ...
 ```
+
+## Prefabs
+
+#### 1. Prefer nested prefab structure over flat one
+
+```unity-scene-notation
+# Correct
+UI
+  Tutorial
+  Menu
+  Pause
+Game
+  Character
+  Environment
+    Interactable
+      ...
+    Static
+      ...
+
+# Avoid
+====UI====
+Tutorial
+Menu
+Pause
+===Game===
+Character
+Interactable
+  ...
+Static
+  ...
+```
+
+#### 2. Do not unpack prefabs unless it is necessary
 
 ## Builds
 

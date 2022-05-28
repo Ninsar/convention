@@ -14,24 +14,24 @@ Acnhor'ы бывают 5 типов:
 
 Для того чтобы редактировать Anchor надо снять выделение со всех объектов (если оно есть) и открыть окно `Properties`, в котором можно выбрать тип `Anchor`'а.
 
-![Anchor Properties](reality-composer/1.png)
+![Anchor Properties](img/1.png)
 
 ### Image Anchor
 
 `Image Anchor` требует задания картинки, которая будет использоваться в качестве метки и указать его физический размер.
 
-![Image Anchor](reality-composer/2.png)
+![Image Anchor](img/2.png)
 
 ### Object Acnhor
 
 `Object Anchor` требует задания отсканированного объекта который в дальнейшим будет распознан.
 
-![Object Anchor](reality-composer/3.png)
+![Object Anchor](img/3.png)
 
 Объект можно отсканировать с iOS-устройства.
 
-![Object Anchor on iOS 1](reality-composer/4.png)
-![Object Anchor on iOS 2](reality-composer/5.png)
+![Object Anchor on iOS 1](img/4.png)
+![Object Anchor on iOS 2](img/5.png)
 
 Процесс сканирования заключается в фотографировании объекта по кругу и сверху. После того, как объект отсканирован следует проверить качество распознавания с ракурсов, которые предполагаются наиболее вероятными в production, и в случае неудовлетворительных результатов отсканировать объект заново
 
@@ -45,7 +45,7 @@ Reality Composer поддерживает `.obj` и `.usd(z)` файлы. `.obj`
 
 В Reality Composer 3d модели можно передвигать (за стрелочки), вращать по осям (выбрать ось нажатием на стрелочку) и масштабировать (только пропорционально).
 
-![Content](reality-composer/6.png)
+![Content](img/6.png)
 
 Так же можно: переключать пространство с глобального на локальное и включать/отключать snapping.
 
@@ -53,28 +53,28 @@ Reality Composer поддерживает `.obj` и `.usd(z)` файлы. `.obj`
 
 Reality Composer позволяет добавлять интерактив к объектам (`Behaviour`'ы), который работает следующим образом: Определенное действие (`Action`) запускается на определенное событие (`Trigger`). Существуют уже готовые `Behaviour`'ы (пары `Trigger`-`Action`).
 
-![Behaviours](reality-composer/7.png)
+![Behaviours](img/7.png)
 
 ### Анимации
 
 По умолчанию Reality Composer не запускает анимации. Анимацию можно запустить через `Behaviour`, используя `Action` USDZ Animation. Например, следущий `Behaviour` запустит анимацию выбранныъ объектов (Affected Objects) при запуске сцены.
 
-![Animation Behaviour](reality-composer/8.png)
+![Animation Behaviour](img/8.png)
 
 ### Библиотека контента
 
 В Reality Composer существует библиотека готового контента, из которой объект можно добавить на сцену.
 
-![Content library](reality-composer/9.png)
+![Content library](img/9.png)
 
 В окне `Properties` можно редактировать параметры объекта.
 
-![Properties](reality-composer/10.png)
+![Properties](img/10.png)
 
 Так же можно изменять размер объекта (особенно актуально для текстов) через пункт `Modify` в контекстном меню
 
-![Modify 1](reality-composer/11.png)
-![Modify 2](reality-composer/12.png)
+![Modify 1](img/11.png)
+![Modify 2](img/12.png)
 
 ### Результат работы
 
